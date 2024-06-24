@@ -1,0 +1,40 @@
+{
+  "UI": {
+    "Hello World": {
+      "description": "The minimal Flutter app",
+      "code": "runApp(MyApp());"
+    },
+    "Basic Widgets": {
+      "Text": "Creates a run of styled text",
+      "Row": "Creates a flexible layout in the horizontal direction",
+      "Column": "Creates a flexible layout in the vertical direction",
+      "Stack": "Places widgets on top of each other in paint order",
+      "Container": "Creates a rectangular visual element"
+    },
+    "Using Material Components": {
+      "MaterialApp": "The root of a Material Design app",
+      "Material Design widgets": "Follows Material Design guidelines"
+    },
+    "Handling Gestures": {
+      "GestureDetector": "Detects gestures made by the user",
+      "onTap()": "Callback triggered when the user taps the widget"
+    },
+    "Changing Widgets in Response to Input": {
+      "StatefulWidget": "Captures state changes",
+      "State": "Holds state",
+      "setState()": "Marks the widget as dirty and schedules a rebuild"
+    },
+    "Bringing it all Together": {
+      "ShoppingListItem": "A stateless widget that displays a product",
+      "ShoppingList": "A stateful widget that stores mutable state"
+    },
+    "Responding to Widget Lifecycle Events": {
+      "initState()": "Called when the state object is inserted into the tree",
+      "dispose()": "Called when the state object is no longer needed"
+    },
+    "Keys": {
+      "description": "Used to control which widgets the framework matches up with other widgets",
+      "GlobalKey": "Uniquely identifies child widgets across the entire widget hierarchy"
+    }
+  }
+}
