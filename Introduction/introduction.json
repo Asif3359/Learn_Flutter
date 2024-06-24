@@ -1,40 +1,77 @@
 {
-  "UI": {
+  "Building User Interfaces with Flutter": {
+    "Introduction": {
+      "description": "Building UI with Flutter",
+      "note": "Check out building layouts and adding interactivity to your Flutter app"
+    },
     "Hello World": {
-      "description": "The minimal Flutter app",
-      "code": "runApp(MyApp());"
+      "code": "runApp(MyApp());",
+      "description": "Minimal Flutter app with a Center widget and a Text widget"
     },
     "Basic Widgets": {
-      "Text": "Creates a run of styled text",
-      "Row": "Creates a flexible layout in the horizontal direction",
-      "Column": "Creates a flexible layout in the vertical direction",
-      "Stack": "Places widgets on top of each other in paint order",
-      "Container": "Creates a rectangular visual element"
+      "widgets": [
+        {
+          "name": "Text",
+          "description": "Create a run of styled text within your application"
+        },
+        {
+          "name": "Row",
+          "description": "Create flexible layouts in the horizontal direction"
+        },
+        {
+          "name": "Column",
+          "description": "Create flexible layouts in the vertical direction"
+        },
+        {
+          "name": "Stack",
+          "description": "Place widgets on top of each other in paint order"
+        },
+        {
+          "name": "Container",
+          "description": "Create a rectangular visual element"
+        }
+      ]
     },
     "Using Material Components": {
-      "MaterialApp": "The root of a Material Design app",
-      "Material Design widgets": "Follows Material Design guidelines"
+      "description": "Use Material Design widgets to build apps that follow Material Design",
+      "widgets": [
+        {
+          "name": "MaterialApp",
+          "description": "Builds a number of useful widgets at the root of your app"
+        },
+        {
+          "name": "AppBar",
+          "description": "Creates a Material Design app bar"
+        },
+        {
+          "name": "Scaffold",
+          "description": "Organizes its children in a vertical column"
+        }
+      ]
     },
     "Handling Gestures": {
-      "GestureDetector": "Detects gestures made by the user",
-      "onTap()": "Callback triggered when the user taps the widget"
+      "description": "Detect input gestures using the GestureDetector widget",
+      "code": "GestureDetector(onTap: () => print('Tap detected'))"
     },
     "Changing Widgets in Response to Input": {
-      "StatefulWidget": "Captures state changes",
-      "State": "Holds state",
-      "setState()": "Marks the widget as dirty and schedules a rebuild"
+      "description": "Use StatefulWidgets to capture state and react to user input",
+      "code": "ElevatedButton(onPressed: () => setState(() => _counter++))"
     },
     "Bringing it all Together": {
-      "ShoppingListItem": "A stateless widget that displays a product",
-      "ShoppingList": "A stateful widget that stores mutable state"
+      "description": "Example of a shopping application that displays products and maintains a shopping cart",
+      "code": "ShoppingListItem(product: product, inCart: inCart, onCartChanged: onCartChanged)"
     },
     "Responding to Widget Lifecycle Events": {
-      "initState()": "Called when the state object is inserted into the tree",
-      "dispose()": "Called when the state object is no longer needed"
+      "description": "Use initState and dispose to do work that needs to happen just once",
+      "code": "initState() { super.initState(); }"
     },
     "Keys": {
-      "description": "Used to control which widgets the framework matches up with other widgets",
-      "GlobalKey": "Uniquely identifies child widgets across the entire widget hierarchy"
+      "description": "Use keys to control which widgets the framework matches up with other widgets when a widget rebuilds",
+      "code": "ShoppingList(items: items, key: Key('shopping_list'))"
+    },
+    "Global Keys": {
+      "description": "Use global keys to uniquely identify child widgets",
+      "code": "GlobalKey<ShoppingListState>(debugLabel: 'hopping_list_key')"
     }
   }
 }
